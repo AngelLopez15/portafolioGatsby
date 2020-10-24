@@ -1,0 +1,26 @@
+.menu{
+  
+  padding: 2rem 0 2rem 0;
+
+  &__navbar-menu{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  &__navbar-item{
+    margin-right: 2rem;
+    font-weight: bold;
+  }
+
+  &__navbar-link{
+    color: #fff;
+    
+    &:hover{
+      color: #0098d3;
+      text-decoration: none;
+    }
+  }
+
+}
