@@ -12,7 +12,7 @@ export default function index() {
     // Es como si fuera un componente de orden superior
     // por medio de props estamos enviando un color dinamicamente para el fondo del menu
     <BasicLayout 
-      menuColor="#000"
+      // menuColor="#000"
     >
       <Profile />
       <h1 className="title">Hola, Gente, este es el Home</h1>
