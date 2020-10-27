@@ -15,12 +15,53 @@
   &__dark{
     width: 100%;
     height: 600px;
-    // background-color: #000;
+    background-color: rgba($color: #000000, $alpha: 0.7);
     position: absolute;
     top: 0;
     left: 0;
+    // background-color: #000;
     // opacity: .7;
-    background-color: rgba($color: #000000, $alpha: 0.7);
   }
+
+  &__box{
+    position: relative;
+    margin-top: -400px;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 0 15px 0 rgba($color: #000000, $alpha: .7);
+  }  
+
+  &__info{
+    padding: 5rem;
+  }
+
+  &__data-greeting{
+    background-color: #0098d3;
+    font-weight: bold;
+    color: #fff;
+    padding: .3rem 1rem;
+    border-radius: 4px;
+  }
+
+  &__data-name{
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  &__data-item{
+    display: flex;
+    &-phone{
+      width: 25%;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    &-phone-number{
+      width: 75%;
+      font-weight: bolder;
+      color: #001;
+    }
+  }
+
 
 }
