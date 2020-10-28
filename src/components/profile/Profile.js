@@ -2,6 +2,7 @@ import React from 'react'
 import { Col, Container, Image, Row } from 'react-bootstrap'
 import imageProfile from "../../images/avatar.png"
 import "./Profile.scss"
+import Social from './Social'
 
 export default function Profile() {
   
@@ -50,6 +51,7 @@ export default function Profile() {
             </div>
           </Col>
         </Row>
+        <Social />
       </Container>
     </div>
   )
