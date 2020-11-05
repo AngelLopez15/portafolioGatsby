@@ -1,5 +1,6 @@
 import React from 'react'
 import {Button} from "react-bootstrap"
+import AboutMe from '../components/aboutMe/AboutMe'
 import Profile from '../components/profile/Profile'
 import BasicLayout from '../layout/BasicLayout'
 import "./index.scss"
@@ -15,8 +16,9 @@ export default function index() {
       // menuColor="#000"
     >
       <Profile />
-      <h1 className="title">Hola, Gente, este es el Home</h1>
-      <Button variant="primary">Click Me</Button>
+      {/* <h1 className="title">Hola, Gente, este es el Home</h1>
+      <Button variant="primary">Click Me</Button> */}
+      <AboutMe />
     </BasicLayout>
   )
 }
