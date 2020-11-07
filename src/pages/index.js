@@ -1,5 +1,4 @@
 import React from 'react'
-import {Button} from "react-bootstrap"
 import AboutMe from '../components/aboutMe/AboutMe'
 import Profile from '../components/profile/Profile'
 import BasicLayout from '../layout/BasicLayout'

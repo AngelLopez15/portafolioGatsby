@@ -1,6 +1,21 @@
 import React from 'react'
+import { Container } from 'react-bootstrap'
+import ListSkills from '../components/listSkills/ListSkills'
 import BasicLayout from '../layout/BasicLayout'
-import "./index.scss"
+import { frontendSkills, 
+  frontendSkillsColors,
+  backendSkills,
+  backendSkillsColors,
+  desingWeb,
+  desingWebColors} from '../utils/skills'
+import "./skills.scss"
+
+// Datos que se usaran para dibujar la barra de skills
+// Se pasan por props para que el componente sea reutilizable
+// const skills = [
+//   {type: "Java", level: 85},
+//   {type: "Javascript", level: 75},
+// ]
 
 export default function index(props) {
   
@@ -12,7 +27,32 @@ export default function index(props) {
     <BasicLayout
       menuColor="red"
     >
-      <h1>Estamos en Skills</h1>
+      <Container className="skills">
+        <div className="skills__block">
+          <h2 className="skills__title">Frontend</h2>
+          <ListSkills 
+            skills={frontendSkills}
+            colors={frontendSkillsColors}
+          />
+        </div>
+
+        <div className="skills__block">
+          <h2 className="skills__title">Backend</h2>
+          <ListSkills 
+            skills={backendSkills}
+            colors={backendSkillsColors}
+          />
+        </div>
+
+        <div className="skills__block">
+          <h2 className="skills__title">Diseño</h2>
+          <ListSkills 
+            skills={desingWeb}
+            colors={desingWebColors}
+          />
+        </div>
+
+      </Container>
     </BasicLayout>
   )
 }
