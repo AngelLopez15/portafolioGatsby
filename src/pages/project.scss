@@ -5,7 +5,22 @@
   }
 
   &__project{
-    
+    margin-bottom: 1rem;
   }
 
+  &__project-image img{
+    max-width: 100%;
+  }
+}
+
+.btn{
+  display: block;
+  background-color: #9c49e9;
+  color:#fff;
+
+  &:hover{
+    background-color: #5cf;
+    color: #fff;
+    transition: background-color 1s ease;
+  }
 }
